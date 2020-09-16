@@ -1,0 +1,646 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+/* font colors */
+
+.blue{
+    color: rgb(7, 86, 110);
+}
+
+/* body */
+
+body{
+    font-family: century gothic;
+}
+
+/* custom container */
+
+.alcohol-container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.faceshield-container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.alcoholPrices-container{
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.price-pink{
+    color: pink;
+}
+
+.price-blue{
+    color: rgb(61, 198, 240);
+}
+
+/* bg-texts */
+
+.bg-txt{
+    font-weight: bold;
+    position: absolute;
+    font-size: 200px;
+    color: rgb(241, 248, 250);
+}
+
+/* active link */
+
+.active-links{
+    color: rgb(7, 86, 110);
+}
+
+/* header */
+
+header{
+    padding-top: 30px;
+    height: 100px;
+    background: rgb(250, 167, 181);
+    display: flex;
+}
+
+header h1{
+    font-size: 30px;
+    float:left;
+}
+
+header nav{
+    float: right;
+    padding-top: 11px;
+  
+    font-size: 13px;
+}
+
+header nav li{
+    float: left;
+    list-style: none;
+    margin-left: 20px;
+    transition-property: color;
+    transition-duration: .5s;
+    color:#fff;
+}
+
+header nav a{
+    color:#fff;
+}
+
+header nav li:hover{
+    cursor: pointer;
+    color: rgb(223, 131, 131);
+}
+
+header nav ul li ul li{
+    float:none;
+    text-align: center;
+    margin-left: 0;
+    background: rgb(250, 167, 181);
+    padding: 10px 0px 10px 0px;
+    display: none;
+    transition-property: background, color;
+    transition-duration: .5s;
+}
+
+header nav ul li ul a{
+    color:#fff;
+    text-decoration: none;
+    display: block;
+}
+
+header nav ul li:hover ul li{
+    display: block;
+}
+
+header nav ul li ul a:hover{
+    text-decoration: none;
+}
+
+header nav ul li ul li:hover{
+    background: rgb(223, 131, 131);
+    color:#fff;
+}
+
+header .menu{
+    font-size: 20px;
+    display:none; 
+    color: #fff;
+}
+
+/* responsive menu */
+
+.responsive-menu{
+    padding: 30px 0 30px 0;
+    background: rgb(250, 167, 181); 
+    display:none;
+}
+
+.responsive-menu li{
+    font-size: 13px;
+    list-style: none;
+    margin-top: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.responsive-menu li:hover{
+    color: rgb(223, 131, 131);
+}
+
+.responsive-menu li:hover ul{
+    display:block;
+}
+
+.responsive-menu ul li ul a{
+    color: #fff;
+}
+
+.responsive-menu ul li ul{
+    margin-left: 20px;
+    display: none;
+}
+
+.responsive-menu ul li ul a:hover{
+    text-decoration: none;
+}
+
+/* showcase */
+
+.showcase{
+    min-height: 550px;
+    padding-bottom: 100px;
+    background: pink;
+    box-shadow: 0 5px 10px rgb(194, 191, 191);
+}
+
+.showcase .bigpic{
+    float: left;
+    width: 50%;
+}
+
+.showcase .bigpic img{
+    margin-top: 74px;
+    border-bottom: red;
+}
+
+.showcase .catchy{
+    padding: 100px 0 0 0;
+    float: right;
+    width: 50%;
+}
+
+.showcase .catchy h2{
+    color: rgb(7, 86, 110);
+    font-size: 50px;
+    font-family: arial;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.showcase .catchy p{
+    font-size: 13px;
+    color: rgb(7, 86, 110);
+    margin-top: 25px;
+}
+
+.showcase .catchy .select-show{
+    text-align: center;
+    font-size: 15px;
+    padding: 20px 0 20px 0;
+    border:rgb(223, 131, 131) 1px solid;
+    width: 60%;
+    margin: 50px auto 0px auto;
+    cursor: pointer;
+    transition-property: background, color;
+    transition-duration: .5s;
+}
+
+.showcase .catchy .select-show:hover{
+    background: rgb(223, 131, 131);
+    color:#fff;
+}
+
+.showcase .catchy .select-hide{
+    display: none;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px 0 20px 0;
+    border:rgb(223, 131, 131) 1px solid;
+    width: 60%;
+    margin: 50px auto 0px auto;
+    cursor: pointer;
+    transition-property: background, color;
+    transition-duration: .5s;
+}
+
+.showcase .catchy .select-hide:hover{
+    background: rgb(223, 131, 131);
+    color:#fff;
+}
+
+.showcase .catchy .choices{
+    text-align: center;
+    display: none;
+}
+
+.showcase .catchy li{
+    list-style: none;
+    padding: 20px 0 20px 0;
+    background: rgb(250, 167, 181);
+    color:#fff;
+    width: 60%;
+    margin: auto;
+}
+
+.showcase .catchy a:hover{
+    text-decoration: none;
+    display:block;
+}
+
+.showcase .catchy a:hover li{
+    background: rgb(223, 131, 131);
+}
+
+/* alcohol */
+
+.alcohol{
+    padding: 50px 0 50px 0;
+    position: relative;
+}
+
+.alcohol h2{
+    margin: 0 0 50px 0;
+    text-align: center;
+}
+
+.alcohol p{
+    text-align: center;
+    margin: 0 0 50px 0;
+    color: rgb(7, 86, 110);
+}
+
+.alcohol h3{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.alcohol .owl-nav{
+    text-align: center;
+    padding: 30px 0 30px 0;
+}
+
+.alcohol .owl-nav span{
+    font-size: 30px;
+    margin: 50px;
+    color: rgb(7, 86, 110);
+}
+
+.alcohol .owl-dots{
+    display: none;
+}
+
+.alcohol .product{
+    width: 95%;
+    height: 300px;
+    margin:auto;
+    background: rgb(250, 167, 181);
+    transform: rotateZ(5deg);
+}
+
+.alcohol .product img{
+    width: 100%;
+    height: 100%;
+    transform: rotateZ(-5deg);
+    box-shadow: 0 0 10px #000;
+}
+
+.alcohol .view-btn{
+    text-align: center;
+}
+
+.alcohol .view-btn button{
+    width: 30%;
+    padding: 20px 0 20px 0;
+    background: pink;
+    border: none;
+    color: rgb(7, 86, 110);
+    font-size: 13px;
+    box-shadow: 0 0 20px pink;
+}
+
+/* faceshield */
+
+.faceshield{
+    padding: 0 0 50px 0;
+}
+
+.faceshield h2{
+    margin: 0 0 50px 0;
+    text-align: center;
+}
+
+.faceshield p{
+    text-align: center;
+    margin: 0 0 50px 0;
+    color: rgb(7, 86, 110);
+}
+
+.faceshield h3{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.faceshield .owl-nav{
+    text-align: center;
+    padding: 30px 0 30px 0;
+}
+
+.faceshield .owl-nav span{
+    font-size: 30px;
+    margin: 50px;
+    color: rgb(7, 86, 110);
+}
+
+.faceshield .owl-dots{
+    display: none;
+}
+
+.faceshield .product{
+    width: 95%;
+    height: 300px;
+    margin:auto;
+    background: rgb(250, 167, 181);
+    transform: rotateZ(5deg);
+}
+
+.faceshield .product img{
+    width: 100%;
+    height: 100%;
+    transform: rotateZ(-5deg);
+    box-shadow: 0 0 10px #000;
+}
+
+.faceshield .view-btn{
+    text-align: center;
+}
+
+.faceshield .view-btn button{
+    width: 30%;
+    padding: 20px 0 20px 0;
+    background: pink;
+    border: none;
+    color: rgb(7, 86, 110);
+    font-size: 13px;
+    box-shadow: 0 0 20px pink;
+}
+
+/* about */
+
+#about{
+    padding: 100px 0 100px 0;
+}
+
+#about .img{
+    float: left;
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+#about .img .img-bg{
+    background: pink;
+    width: 90%;
+    transform: rotateZ(5deg);
+}
+
+#about .img img{
+    width: 100%;
+    transform: rotateZ(-5deg);
+    box-shadow: grey 0 0 5px;
+}
+
+#about .text{
+    float: right;
+    width: 50%;
+}
+
+#about .text h2{
+    font-size: 30px;
+}
+
+#about .text p{
+    font-size: 13px;;
+}
+
+#about .text button{
+    width: 50%;
+    padding: 15px 0 15px 0;
+    margin-top: 30px;
+    border: none;
+    background: pink;
+    color:#fff;
+    font-size: 13px;
+}
+
+#about .text button i{
+    margin-right: 10px;
+}
+
+#about .text .icons .icon{
+    background: pink;
+    padding: 10px;
+    font-size: 13px;
+    color:#fff;
+    border-radius: 50%;
+}
+
+#about .text .icons .location{
+    margin-top: 30px;
+    margin-right: 10px;
+    color: rgb(7, 86, 110);
+}
+
+#about .text .icons .phoneicon{
+    color: rgb(7, 86, 110);
+}
+
+#about .text .icons a{
+    color: #000;
+}
+
+/* alcohol */
+
+#v-alcohol{
+    padding:0;
+    margin:0;
+}
+
+#v-alcohol h2{
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+
+#v-alcohol .img{
+   float:left;
+   width:30%;
+   height: 40vh;
+   margin-left: 10px;
+   margin-top: 1px;
+   margin-bottom: 10px;
+}
+
+#v-alcohol .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: #000 0 0 10px;
+}
+
+#v-alcohol a{
+    color:#000;
+}
+
+#v-alcohol p{
+    text-align: center;
+    font-size: 13px;
+}
+
+#v-alcohol .price{
+    color: pink;
+}
+
+#v-alcohol p a{
+    color:pink;
+}
+
+#v-alcohol i{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 30px;
+    padding: 20px;
+    background: pink;
+    border-radius: 50%;
+}
+
+/* faceshield */
+
+#v-faceshield{
+    padding:0;
+    margin:0;
+}
+
+#v-faceshield h2{
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+
+#v-faceshield .img{
+    float:left;
+    width:30%;
+    height: 40vh;
+    margin-left: 10px;
+    margin-top: 1px;
+    margin-bottom: 10px;
+}
+
+#v-faceshield .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: #000 0 0 10px;
+}
+
+#v-faceshield a{
+    color:#000;
+}
+
+#v-faceshield p{
+    text-align: center;
+    font-size: 13px;
+}
+
+#v-faceshield p a{
+    color:pink;
+}
+
+#v-faceshield i{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 30px;
+    padding: 20px;
+    background: pink;
+    border-radius: 50%;
+}
+
+/* alcohol prices */
+
+#alcoholPrices h2{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#alcoholPrices .alcohol{
+    padding: 10px;
+    
+}
+
+#alcoholPrices .alcohol .div{
+    float: left;
+    width: 50%;
+    height: 40vh;
+    margin-bottom: 50px;
+}
+
+#alcoholPrices .alcohol .pink-bg{
+    width: 100%;
+    height: 100%;
+    transform: rotateZ(5deg);
+    background: pink;
+}
+
+#alcoholPrices .alcohol .blue-bg{
+    width: 100%;
+    height: 100%;
+    transform: rotateZ(5deg);
+    background: rgb(61, 198, 240);
+}
+
+#alcoholPrices .alcohol .div img{
+    width: 100%;
+    height: 100%;
+    transform: rotateZ(-5deg);
+    box-shadow: #000 0 0 10px;
+}
+
+#alcoholPrices .alcohol .div h4{
+    margin-left: 30px;
+    font-size: 40px;
+}
+
+#alcoholPrices .alcohol .div .no-margin{
+    margin-left: 0px;
+}
+
+#alcoholPrices .alcohol .div h5{
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+/* footer */
+
+footer{
+    padding: 50px 0 50px 0;
+    clear: both;
+    background: rgb(250, 167, 181);
+    text-align: center;
+    color:#fff;
+    font-size: 13px;
+}

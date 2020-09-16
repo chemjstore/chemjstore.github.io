@@ -1,0 +1,96 @@
+@media(max-width: 995px){
+    .showcase .bigpic,
+    .showcase .catchy{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .showcase .catchy{
+        padding-top: 15px;
+    }
+}
+
+@media(max-width: 780px){
+
+    header nav ul{
+        display:none;
+    }
+
+    header .menu{
+        display:block;
+    }
+
+    .responsive-menu{
+        display:none;
+    }
+
+    #about .img{
+        float: none;
+        width: 100%;
+    }
+
+    #about .img-bg{
+        margin: auto;
+    }
+
+    #about .text{
+        float: none;
+        width: 100%;
+    }
+
+    .showcase .bigpic img{
+        margin-top: 15px;
+    }
+
+    .showcase .catchy p{
+        margin-top: 15px;
+        margi-bottom: 15px;
+    }
+
+    #about{
+        padding-top: 30px;
+    }
+
+    .alcohol-container,
+    .faceshield-container{
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    #v-alcohol .img,
+    #v-faceshield .img{
+        float:left;
+        width: 50%;
+        height: 30vh;
+        margin-left: 0px;
+        margin-top: 1px;
+        margin-bottom: 1px;
+     }
+
+     .alcoholPrices-container{
+        width: 95%;
+    }
+}
+
+@media(max-width: 500px){
+    .showcase .bigpic img{
+        width: 100%;
+    }
+
+    #alcoholPrices .alcohol .div{
+        float: left;
+        width: 50%;
+        height: 20vh;
+        margin-bottom: 50px;
+    }
+
+    #alcoholPrices .alcohol .div h4{
+        font-size: 20px;
+    }
+
+    #alcoholPrices .alcohol .div h5{
+        font-size: 15px;
+    }
+}
